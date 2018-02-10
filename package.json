@@ -1,0 +1,21 @@
+{
+  "name": "npm-author-most-downloaded",
+  "version": "0.0.0",
+  "license": "MIT",
+  "repository": "juliangruber/npm-author-most-downloaded",
+  "description": "Get the most downloaded npm packages per author.",
+  "bin": {
+    "npm-author-most-downloaded": "bin/npm-author-most-downloaded.js"
+  },
+  "scripts": {
+    "test": "prettier-standard '**/*.js' && standard && node bin/npm-author-most-downloaded.js juliangruber"
+  },
+  "dependencies": {
+    "download-counts": "^1.81.1",
+    "npm-user-packages": "^3.0.0"
+  },
+  "devDependencies": {
+    "prettier-standard": "^8.0.0",
+    "standard": "^10.0.3"
+  }
+}
